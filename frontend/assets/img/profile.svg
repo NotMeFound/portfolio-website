@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#52525b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#27272a" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer subtle aura ring -->
+  <circle cx="200" cy="200" r="175" fill="#f4f4f5" fill-opacity="0.5"/>
+  <circle cx="200" cy="200" r="160" stroke="#3f3f46" stroke-width="1.75"/>
+  <!-- Head silhouette with soft gradient -->
+  <circle cx="200" cy="155" r="50" fill="url(#avatarGrad)" stroke="#3f3f46" stroke-width="1.75"/>
+  <!-- Shoulders silhouette -->
+  <path d="M110 310c15-55 50-80 90-80s75 25 90 80" fill="url(#avatarGrad)" stroke="#3f3f46" stroke-width="1.75" stroke-linecap="round"/>
+</svg>

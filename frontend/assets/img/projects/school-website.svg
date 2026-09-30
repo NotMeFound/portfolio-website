@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" fill="none">
+  <defs>
+    <linearGradient id="schoolGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#71717a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#3f3f46" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <!-- Background gentle aura -->
+  <circle cx="320" cy="180" r="115" fill="#f4f4f5" fill-opacity="0.6"/>
+  <!-- School Building Structure -->
+  <path d="M120 280h400M160 280V170l160-80 160 80v110" fill="url(#schoolGrad)" stroke="#3f3f46" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bell tower flag -->
+  <path d="M320 90v-30m0 0h25l-10 12 10 12h-25" stroke="#3f3f46" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Entrance doors -->
+  <path d="M220 280v-50h40v50m120 0v-50h40v50" fill="#ffffff" fill-opacity="0.8" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Tower Clock -->
+  <circle cx="320" cy="160" r="22" fill="#ffffff" fill-opacity="0.9" stroke="#3f3f46" stroke-width="1.75"/>
+  <path d="M320 148v12l8 6" stroke="#3f3f46" stroke-width="1.75" stroke-linecap="round"/>
+</svg>

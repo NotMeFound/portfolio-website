@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" fill="none">
+  <defs>
+    <linearGradient id="pickleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#84cc16" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4d7c0f" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+  <!-- Background gentle aura -->
+  <circle cx="320" cy="195" r="110" fill="#ecfccb" fill-opacity="0.3"/>
+  <!-- Jar outline with gentle olive/sage tint -->
+  <path d="M260 80h120v30H260zM240 110h160v170a20 20 0 0 1-20 20H260a20 20 0 0 1-20-20V110z" fill="url(#pickleGrad)" stroke="#65a30d" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Product Label -->
+  <rect x="270" y="160" width="100" height="70" rx="4" fill="#ffffff" fill-opacity="0.85" stroke="#65a30d" stroke-width="1.5"/>
+  <path d="M285 190h70m-70 15h45" stroke="#4d7c0f" stroke-width="1.75" stroke-linecap="round"/>
+</svg>

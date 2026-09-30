@@ -1,0 +1,34 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
+4 0 obj << /Length 485 >> stream
+BT
+/F1 18 Tf 50 720 Td (KARAN OLI - Full-Stack Developer) Tj
+/F1 10 Tf 0 -22 Td (Nepalgunj, Banke, Nepal | karan.oli@example.com | +977-9800000000) Tj
+/F1 12 Tf 0 -30 Td (EDUCATION) Tj
+/F1 10 Tf 0 -18 Td (Bachelor of Computer Application (BCA), Tribhuvan University, 2021 - 2025) Tj
+/F1 10 Tf 0 -14 Td (Mahendra Multiple Campus, Nepalgunj) Tj
+/F1 12 Tf 0 -30 Td (TECHNICAL SKILLS) Tj
+/F1 10 Tf 0 -18 Td (Frontend: HTML5, CSS3, JavaScript (ES2022), Responsive Web Design, DOM APIs) Tj
+/F1 10 Tf 0 -14 Td (Backend: Node.js, Express.js, PHP, REST APIs, Authentication) Tj
+/F1 10 Tf 0 -14 Td (Databases & Tools: MySQL, Git, GitHub, VS Code, Postman, Linux) Tj
+/F1 12 Tf 0 -30 Td (FEATURED PROJECTS) Tj
+/F1 10 Tf 0 -18 Td (1. School Website - PHP, MySQL, HTML5, CSS3, JS (Notice board, admissions, admin)) Tj
+/F1 10 Tf 0 -14 Td (2. Nepalgunj Blood Savior - Node.js, Express, MySQL (Emergency donor matching network)) Tj
+/F1 10 Tf 0 -14 Td (3. Everest Pickle Udhyogh - PHP, MySQL (E-commerce catalog and order management)) Tj
+ET
+endstream endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000000780 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+851
+%%EOF

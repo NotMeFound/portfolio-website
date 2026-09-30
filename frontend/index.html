@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karan Oli — Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Karan Oli, full-stack developer from Nepalgunj, Nepal. BCA graduate (Tribhuvan University, 2025)." />
+    <meta name="theme-color" content="#3f3f46" />
+    <meta property="og:title" content="Karan Oli — Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Karan Oli, full-stack developer from Nepalgunj, Nepal." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://karanoli.com.np" />
+
+    <!-- Anti-FOUC immediate theme script -->
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      })();
+    </script>
+
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Karan Oli Home">
+          <span>Karan<span class="brand-dot">.</span>Oli</span>
+        </a>
+
+        <nav id="nav" class="nav" aria-label="Main Navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeBtn" class="icon-btn" aria-label="Toggle dark mode" aria-pressed="false">
+            <!-- Moon icon (shown in light mode) -->
+            <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+            <!-- Sun icon (shown in dark mode) -->
+            <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+          </button>
+
+          <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="top" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Available for hire · Nepalgunj, Nepal</span>
+            </div>
+            <h1>Karan Oli</h1>
+            <p class="hero-lead">
+              I build reliable web applications and backend systems for local businesses, schools, and community networks across western Nepal. Focused on clean database schemas, predictable server architectures, and accessible user interfaces.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="assets/docs/karan-oli-resume.pdf" class="btn btn-secondary" download="karan-oli-resume.pdf">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Resume (PDF)</span>
+              </a>
+              <a href="#contact" class="btn btn-ghost">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img src="assets/img/profile.jpg" onerror="this.onerror=null; this.src='assets/img/profile.svg';" alt="Portrait photo of Karan Oli" class="hero-avatar" width="400" height="400" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <header>
+            <span class="eyebrow">Background</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-sub">Education, regional focus, and development principles.</p>
+          </header>
+
+          <div class="about-grid">
+            <article class="about-prose">
+              <p>
+                I'm a developer based in Nepalgunj, Nepal, wrapping up my BCA at Mahendra Multiple Campus under Tribhuvan University. Over the past two years I've shipped three production web applications — a school website, an emergency blood donor network, and an order management system for a local business.
+              </p>
+              <p>
+                I work across the stack: semantic HTML and structured CSS on the front, JavaScript and Node.js on the back, MySQL for data. I care about clean code, clear interfaces, and shipping things that work.
+              </p>
+            </article>
+
+            <aside class="about-aside">
+              <dl class="fact-list">
+                <div class="fact-item">
+                  <dt>Education</dt>
+                  <dd>BCA, Mahendra Multiple Campus, Tribhuvan University — 2025</dd>
+                </div>
+                <div class="fact-item">
+                  <dt>Location</dt>
+                  <dd>Nepalgunj, Banke, Nepal</dd>
+                </div>
+                <div class="fact-item">
+                  <dt>Focus</dt>
+                  <dd>Full-Stack Web Development, REST APIs, Relational Data</dd>
+                </div>
+                <div class="fact-item">
+                  <dt>Status</dt>
+                  <dd><span class="status-dot-inline"></span>Available for software engineering roles and contracts</dd>
+                </div>
+              </dl>
+              <div style="margin-top: var(--s-4); padding-top: var(--s-3); border-top: 1px solid var(--border);">
+                <a href="assets/docs/karan-oli-resume.pdf" class="btn btn-secondary btn-sm" download="karan-oli-resume.pdf" style="width: 100%; justify-content: center;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download Full Resume (PDF)</span>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section section-soft">
+        <div class="container">
+          <header>
+            <span class="eyebrow">Capabilities</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-sub">Core technologies and tools I use to design, build, and deploy systems.</p>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript ES2022</li>
+                <li>Responsive Design</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <ul class="skill-list">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PHP</li>
+                <li>REST APIs</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Database</h3>
+              <ul class="skill-list">
+                <li>MySQL</li>
+                <li>SQL</li>
+                <li>Schema Design</li>
+                <li>Data Normalization</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <h3>Tools</h3>
+              <ul class="skill-list">
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>cPanel & Linux</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section (Display-Only) -->
+      <section id="projects" class="section">
+        <div class="container">
+          <header>
+            <span class="eyebrow">Portfolio</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-sub">Production systems built for real-world operations in western Nepal.</p>
+          </header>
+
+          <div class="projects-grid">
+            <!-- Project 1: School Website -->
+            <article class="project-card">
+              <img src="assets/img/projects/school-website.jpg" onerror="this.onerror=null; this.src='assets/img/projects/school-website.svg';" alt="School Website preview mockup" class="project-thumb" width="640" height="360" loading="lazy" />
+              <div class="project-body">
+                <h3 class="project-title">School Website</h3>
+                <p class="project-summary">Public school site with notice board, photo gallery, online admission form, and a PHP admin panel for staff.</p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li class="tag-item">HTML5</li>
+                  <li class="tag-item">CSS3</li>
+                  <li class="tag-item">JavaScript</li>
+                  <li class="tag-item">PHP</li>
+                  <li class="tag-item">MySQL</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project 2: Nepalgunj Blood Savior -->
+            <article class="project-card">
+              <img src="assets/img/projects/blood-savior.jpg" onerror="this.onerror=null; this.src='assets/img/projects/blood-savior.svg';" alt="Nepalgunj Blood Savior emergency network interface" class="project-thumb" width="640" height="360" loading="lazy" />
+              <div class="project-body">
+                <h3 class="project-title">Nepalgunj Blood Savior</h3>
+                <p class="project-summary">Emergency blood donor network for Nepalgunj. Donors register by blood group and ward; recipients search and send requests.</p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li class="tag-item">Node.js</li>
+                  <li class="tag-item">Express</li>
+                  <li class="tag-item">MySQL</li>
+                  <li class="tag-item">JavaScript</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project 3: Everest Pickle Udhyogh -->
+            <article class="project-card">
+              <img src="assets/img/projects/everest-pickle.jpg" onerror="this.onerror=null; this.src='assets/img/projects/everest-pickle.svg';" alt="Everest Pickle Udhyogh e-commerce catalog mockup" class="project-thumb" width="640" height="360" loading="lazy" />
+              <div class="project-body">
+                <h3 class="project-title">Everest Pickle Udhyogh</h3>
+                <p class="project-summary">Product catalog and order management for a local pickle business.</p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li class="tag-item">PHP</li>
+                  <li class="tag-item">MySQL</li>
+                  <li class="tag-item">HTML5</li>
+                  <li class="tag-item">CSS3</li>
+                  <li class="tag-item">JavaScript</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section section-soft">
+        <div class="container">
+          <header>
+            <span class="eyebrow">Get in Touch</span>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-sub">Send a message directly to my inbox for project inquiries or opportunities.</p>
+          </header>
+
+          <div class="contact-grid">
+            <div>
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="field">
+                  <label for="name" class="label">Your Name</label>
+                  <input type="text" id="name" name="name" class="input" required minlength="2" autocomplete="name" placeholder="Bikash Thapa" />
+                </div>
+
+                <div class="field">
+                  <label for="email" class="label">Email Address</label>
+                  <input type="email" id="email" name="email" class="input" required autocomplete="email" placeholder="bikash@example.com" />
+                </div>
+
+                <div class="field">
+                  <label for="subject" class="label">Subject</label>
+                  <input type="text" id="subject" name="subject" class="input" required minlength="2" placeholder="Project inquiry / Full-stack developer role" />
+                </div>
+
+                <div class="field">
+                  <label for="message" class="label">Message</label>
+                  <textarea id="message" name="message" class="textarea" required minlength="5" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn btn-primary">
+                  <span>Send Message</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+
+            <aside class="contact-info">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <div>
+                  <div class="info-label">Email</div>
+                  <div class="info-val"><a href="mailto:karanoli@example.com">karanoli@example.com</a></div>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <div class="info-label">Phone</div>
+                  <div class="info-val">+977 98XXXXXXXX</div>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <div class="info-label">Location</div>
+                  <div class="info-val">Nepalgunj, Banke, Nepal</div>
+                </div>
+              </div>
+
+              <div class="social-row">
+                <a href="https://github.com/karanoli" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/in/karanoli" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <span>&copy; <span id="year">2026</span> Karan Oli. All rights reserved.</span>
+          <span style="display: block; font-size: 0.8125rem; margin-top: 2px;">Built with plain HTML, CSS, and JavaScript.</span>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#top">Top</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

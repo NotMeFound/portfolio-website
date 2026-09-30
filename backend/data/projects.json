@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "school-website",
+    "title": "School Website",
+    "summary": "Public school site with notice board, photo gallery, online admission form, and a PHP admin panel for staff.",
+    "stack": ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+    "year": 2024
+  },
+  {
+    "slug": "blood-savior",
+    "title": "Nepalgunj Blood Savior",
+    "summary": "Emergency blood donor network for Nepalgunj. Donors register by blood group and ward; recipients search and send requests.",
+    "stack": ["Node.js", "Express", "MySQL", "JavaScript"],
+    "year": 2024
+  },
+  {
+    "slug": "everest-pickle",
+    "title": "Everest Pickle Udhyogh",
+    "summary": "Product catalog and order management for a local pickle business.",
+    "stack": ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript"],
+    "year": 2025
+  }
+]
