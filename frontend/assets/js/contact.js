@@ -158,11 +158,11 @@ const API_BASE = window.API_BASE_URL || (
         });
       } else {
         statusEl.className = 'form-status error';
-        statusEl.textContent = data.error || 'Something went wrong. Please try again.';
+        statusEl.innerHTML = (data.error || 'Something went wrong.') + ' <a href="mailto:karankaranoli8@gmail.com" style="color: inherit; text-decoration: underline; font-weight: 600;">Email directly at karankaranoli8@gmail.com</a>';
       }
     } catch (err) {
       statusEl.className = 'form-status error';
-      statusEl.textContent = 'Network error: could not connect to server. Please email directly.';
+      statusEl.innerHTML = 'Network error: could not connect to server. <a href="mailto:karankaranoli8@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message) + '" style="color: inherit; text-decoration: underline; font-weight: 600;">Click here to send via Gmail directly</a>';
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = originalBtnText;
