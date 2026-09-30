@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 exports.sendContactMail = async ({ name, email, subject, message }) => {
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
-  const receiver = process.env.CONTACT_RECEIVER || user || 'chhetrikara.147@gmail.com';
+  const receiver = process.env.CONTACT_RECEIVER || user || 'chhetrikaran.147@gmail.com';
 
   const isConfigured = Boolean(
     user &&
