@@ -20,7 +20,7 @@ exports.sendContactMail = async ({ name, email, subject, message }) => {
   const isConfigured = Boolean(
     user &&
     pass &&
-    user.includes('chhetrikaran.147@gmail.com') &&
+    // user.includes('chhetrikaran.147@gmail.com') &&
     pass !== 'your-16-char-app-password' &&
     pass !== 'abcdefghijklmnop' &&
     pass.length >= 8
