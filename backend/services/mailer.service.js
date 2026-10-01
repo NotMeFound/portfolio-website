@@ -10,7 +10,7 @@ exports.sendContactMail = async ({ name, email, subject, message }) => {
     user &&
     pass &&
     !user.includes('example.com') &&
-    pass !== 'your-16-char-app-password' &&
+    pass !== 'onhe umku cazm qtup' &&
     pass.trim().length > 0
   );
 
