@@ -9,7 +9,7 @@ exports.sendContactMail = async ({ name, email, subject, message }) => {
   const isConfigured = Boolean(
     user &&
     pass &&
-    !user.includes('example.com') &&
+    !user.includes('chhetrikaran.147@gmail.com') &&
     pass !== 'onhe umku cazm qtup' &&
     pass.trim().length > 0
   );

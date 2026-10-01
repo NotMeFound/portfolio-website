@@ -123,9 +123,9 @@ To deliver messages from the contact form directly to Karan Oli's Gmail inbox:
    ```env
    SMTP_HOST=smtp.gmail.com
    SMTP_PORT=587
-   SMTP_USER=karanoli@example.com
-   SMTP_PASS=abcdefghijklmnop
-   CONTACT_RECEIVER=karanoli@example.com
+   SMTP_USER=chhetrikaran.147@gmail.com
+   SMTP_PASS=onhe umku cazm qtup
+   CONTACT_RECEIVER=chhetrikaran.147@gmail.com
    ```
 
 Every form submission is automatically sent to `CONTACT_RECEIVER` with `replyTo` set to the visitor's email, and logged to `backend/logs/contact.log`.
@@ -141,9 +141,9 @@ Every form submission is automatically sent to `CONTACT_RECEIVER` with `replyTo`
 | `CLIENT_ORIGIN` | Allowed CORS origin | `http://localhost:3000` or production frontend URL |
 | `SMTP_HOST` | Gmail SMTP server | `smtp.gmail.com` |
 | `SMTP_PORT` | SMTP port | `587` |
-| `SMTP_USER` | Sending Gmail address | `karanoli@example.com` |
-| `SMTP_PASS` | 16-character Gmail App Password | `your-16-char-app-password` |
-| `CONTACT_RECEIVER` | Destination inbox email | `karanoli@example.com` |
+| `SMTP_USER` | Sending Gmail address | `chhetrikaran.147@gmail.com` |
+| `SMTP_PASS` | 16-character Gmail App Password | `onhe umku cazm qtup` |
+| `CONTACT_RECEIVER` | Destination inbox email | `chhetrikaran.147@gmail.com` |
 
 ---
 
@@ -169,9 +169,9 @@ Since `backend/server.js` now serves the frontend statically, you only need **on
    - `NODE_ENV`: `production`
    - `SMTP_HOST`: `smtp.gmail.com`
    - `SMTP_PORT`: `587`
-   - `SMTP_USER`: your Gmail address (e.g. `karanoli@gmail.com`)
-   - `SMTP_PASS`: your 16-character Google App Password (generated at https://myaccount.google.com/apppasswords)
-   - `CONTACT_RECEIVER`: email where you want to receive inquiries (e.g. `karanoli@gmail.com`)
+   - `SMTP_USER`: `chhetrikaran.147@gmail.com` (e.g. `karanoli@gmail.com`)
+   - `SMTP_PASS`: `onhe umku cazm qtup` your 16-character Google App Password (generated at https://myaccount.google.com/apppasswords)
+   - `CONTACT_RECEIVER`: `chhetrikaran.147@gmail.com` email where you want to receive inquiries (e.g. `chhetrikaran.147@gmail.com`)
 6. Click **Deploy Web Service**.
 Your portfolio website and contact form API will be live together at `https://karan-portfolio.onrender.com`!
 
